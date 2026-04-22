@@ -36,7 +36,7 @@ describe('Fake Store API - Produtos', () => {
           category: faker.commerce.department()
         })
         .expectStatus(StatusCodes.CREATED)
-        .expectJsonLike({ id: /\d+/ });
+        .expectJsonLike({ id: /\d+/ }).inspect();
 
       productId = createRes.json.id;
     });

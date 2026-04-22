@@ -25,7 +25,7 @@ describe('Fake Store API - Login', () => {
             password: 'pc2510'
         })
         .expectStatus(StatusCodes.UNAUTHORIZED)
-        .expectBody("Usuário ou senha incorretos");
+        .expectBody("username or password is incorrect");
     });
 
   });  
